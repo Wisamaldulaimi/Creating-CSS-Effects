@@ -1,0 +1,32 @@
+body{
+    text-align:center;
+    font-family:Arial;
+}
+
+h1{
+    animation: colorChange 3s infinite;
+}
+
+.box{
+    width:200px;
+    height:200px;
+    margin:50px auto;
+    background:#3498db;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:20px;
+    transition:0.5s;
+}
+
+.box:hover{
+    transform:rotate(360deg) scale(1.2);
+    background:#e74c3c;
+}
+
+@keyframes colorChange{
+    0%{color:red;}
+    50%{color:blue;}
+    100%{color:green;}
+}
