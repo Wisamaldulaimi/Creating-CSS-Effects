@@ -1,11 +1,14 @@
 body{
     text-align:center;
-    font-family:Arial;
+    font-family:'Poppins', sans-serif;
 }
+
 
 h1{
     animation: colorChange 3s infinite;
+    font-weight:700;
 }
+
 
 .box{
     width:200px;
@@ -20,13 +23,40 @@ h1{
     transition:0.5s;
 }
 
+
 .box:hover{
     transform:rotate(360deg) scale(1.2);
     background:#e74c3c;
 }
 
+
+/* Image Hover Effect */
+.hover-image{
+    width:250px;
+    border-radius:20px;
+    transition:0.5s;
+}
+
+
+.hover-image:hover{
+    width:300px;
+    border-radius:100%;
+    transform:scale(1.1);
+}
+
+
 @keyframes colorChange{
-    0%{color:red;}
-    50%{color:blue;}
-    100%{color:green;}
+
+    0%{
+        color:red;
+    }
+
+    50%{
+        color:blue;
+    }
+
+    100%{
+        color:green;
+    }
+
 }
